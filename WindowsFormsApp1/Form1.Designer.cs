@@ -45,15 +45,15 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.button5 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.button5 = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -228,6 +228,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "История проживания";
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(7, 144);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(312, 20);
+            this.textBox5.TabIndex = 3;
+            this.textBox5.Text = "Новая запись";
+            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(168, 115);
@@ -236,6 +244,7 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "Удалить";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -254,14 +263,7 @@
             this.listView1.Size = new System.Drawing.Size(312, 89);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(7, 144);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(312, 20);
-            this.textBox5.TabIndex = 3;
-            this.textBox5.Text = "Новая запись";
+            this.listView1.View = System.Windows.Forms.View.List;
             // 
             // groupBox4
             // 
@@ -276,12 +278,21 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Оплата проживания";
             // 
-            // numericUpDown1
+            // label7
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(199, 19);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 0;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(155, 22);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 13);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Сумма";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(7, 18);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(142, 20);
+            this.dateTimePicker2.TabIndex = 2;
             // 
             // button5
             // 
@@ -292,21 +303,12 @@
             this.button5.Text = "Сохранить";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker2
+            // numericUpDown1
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(7, 18);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(142, 20);
-            this.dateTimePicker2.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(155, 22);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 13);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Сумма";
+            this.numericUpDown1.Location = new System.Drawing.Point(199, 19);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 0;
             // 
             // Form1
             // 

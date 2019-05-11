@@ -19,7 +19,16 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
+            listView1.Items.Add(textBox5.Text);
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var a = listView1.SelectedItems;
+            for (int i = 0; i < a.Count; i++)
+            {
+                listView1.Items.Remove(a[i]);
+            }
         }
     }
 }
